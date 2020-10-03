@@ -43,4 +43,6 @@ body{
   grid-template-rows: repeat(auto-fit, minmax(200px, 200px));
   grid-gap: 20px;
 }
-
+#baguetteBox-overlay .full-image figcaption {
+  font-family: 'Sansita Swashed', cursive;
+}
