@@ -1,25 +1,3 @@
-//
-//
-// function myFunction() {
-//
-// var mySearch,filter, myGallery, a, dataCaption,i, txtValue;
-// mySearch = document.getElementById('search');
-//     // mySearch.style.color = 'green';
-//     mySearch.value = mySearch.value.toUpperCase();
-// myGallery = document.getElementsByClassName('gallery');
-// a = document.getElementsByClassName('anchor');
-// dataCaption = document.getElementsByTagName('a').getAttribute('data-caption');
-//
-// for (i = 0; i < myGallery.length; i++) {
-//     a = myGallery[i].getElementsByTagName("a")[0];
-//     txtValue = a.textContent || a.innerText;
-//     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//       li[i].style.display = "";
-//     } else {
-//       li[i].style.display = "none";
-//     }
-//   }
-// }
 
 
 function myFunction() {
