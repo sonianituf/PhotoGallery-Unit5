@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
+        <title>Photo-gallery</title>
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
-    <title>Photo-gallery</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/baguetteBox.css">
+        <link rel='stylesheet' href='css/styles.css'>
+    </head>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/baguetteBox.css">
-    <link rel='stylesheet' href='css/styles.css'>
-</head>
+    <body>
+        <h1>My photo gallery</h1>
+        <div class="container">
 
-<body>
-    <div class="container">
+            <div class="searchBar">
+                <input type="text" name="search" id="search" onkeyup = 'myFunction()' placeholder="Search for a picture" autocomplete="off">
+            </div>
 
-        <div class="searchBar">
-            <input type="text" name="search" id="search" onkeyup = 'myFunction()' placeholder="Search for a picture" autocomplete="off">
+            <div class="gallery">
+
+                <a href="photos/01.jpg" class="anchor"
+                data-caption=" I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                <img src="photos/thumbnails/01.jpg" class="image" alt="Haybales" /></a>
+
+                <a href="photos/02.jpg" class="anchor"
+                data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+                <img src="photos/thumbnails/02.jpg" class="image" alt="Lake" /></a>
+
+                <a href="photos/03.jpg" class="anchor"
+                data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+                <img src="photos/thumbnails/03.jpg" class="image" alt="Canyon" /></a>
+
+                <a href="photos/04.jpg" class="anchor"
+                data-caption=" It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+                <img src="photos/thumbnails/04.jpg" class="image" alt="Iceberg." /></a>
+
+                <a href="photos/05.jpg" class="anchor"
+                data-caption=".The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+                <img src="photos/thumbnails/05.jpg" class="image" alt="Desert" /></a>
+
+                <a href="photos/06.jpg" class="anchor"
+                data-caption=" Fall is coming, I love when the leaves on the trees start to change color.">
+                <img src="photos/thumbnails/06.jpg" class="image" alt="Fall." /></a>
+
+                <a href="photos/07.jpg" class="anchor"
+                data-caption="I drove past this plantation yesterday, everything is so green!">
+                <img src="photos/thumbnails/07.jpg" class="image" alt="Plantation" /></a>
+
+                <a href="photos/08.jpg" class="anchor"
+                data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                <img src="photos/thumbnails/08.jpg" class="image" alt="Dunes." /></a>
+
+                <a href="photos/09.jpg" class="anchor"
+                data-caption=" We enjoyed a quiet stroll down this countryside lane.">
+                <img src="photos/thumbnails/09.jpg" class="image" alt="Countryside lane." /></a>
+
+                <a href="photos/10.jpg" class="anchor"
+                data-caption=" Sunset at the coast! The sky turned a lovely shade of orange.">
+                <img src="photos/thumbnails/10.jpg" class="image" alt="Sunset." /></a>
+
+                <a href="photos/11.jpg" class="anchor"
+                data-caption=" I did a tour of a cave today and the view of the landscape below was breathtaking.">
+                <img src="photos/thumbnails/11.jpg" class="image" alt="Cave." /></a>
+
+                <a href="photos/12.jpg" class="anchor"
+                data-caption=" I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+                <img src="photos/thumbnails/12.jpg" class="image" alt="Bluebells." /></a>
+
+            </div>
         </div>
 
-        <div class="gallery">
+        <footer>  &#xa9;sonian 2021 </footer>
+        
+        <!-- <script src="js/jquery-3.5.1.js"></script>  -->
+        <script src="js/searchFilter.js"></script>
+        <script src="js/baguetteBox.js"></script>
+        <script src="js/app.js"></script>
 
-            <a href="photos/01.jpg" class="anchor"
-            data-caption=" I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
-            <img src="photos/thumbnails/01.jpg" class="image" alt="Haybales" /></a>
-
-            <a href="photos/02.jpg" class="anchor"
-            data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
-            <img src="photos/thumbnails/02.jpg" class="image" alt="Lake" /></a>
-
-            <a href="photos/03.jpg" class="anchor"
-            data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
-            <img src="photos/thumbnails/03.jpg" class="image" alt="Canyon" /></a>
-
-            <a href="photos/04.jpg" class="anchor"
-            data-caption=" It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
-            <img src="photos/thumbnails/04.jpg" class="image" alt="Iceberg." /></a>
-
-            <a href="photos/05.jpg" class="anchor"
-            data-caption=".The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
-            <img src="photos/thumbnails/05.jpg" class="image" alt="Desert" /></a>
-
-            <a href="photos/06.jpg" class="anchor"
-            data-caption=" Fall is coming, I love when the leaves on the trees start to change color.">
-            <img src="photos/thumbnails/06.jpg" class="image" alt="Fall." /></a>
-
-            <a href="photos/07.jpg" class="anchor"
-            data-caption="I drove past this plantation yesterday, everything is so green!">
-            <img src="photos/thumbnails/07.jpg" class="image" alt="Plantation" /></a>
-
-            <a href="photos/08.jpg" class="anchor"
-            data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
-            <img src="photos/thumbnails/08.jpg" class="image" alt="Dunes." /></a>
-
-            <a href="photos/09.jpg" class="anchor"
-            data-caption=" We enjoyed a quiet stroll down this countryside lane.">
-            <img src="photos/thumbnails/09.jpg" class="image" alt="Countryside lane." /></a>
-
-            <a href="photos/10.jpg" class="anchor"
-             data-caption=" Sunset at the coast! The sky turned a lovely shade of orange.">
-            <img src="photos/thumbnails/10.jpg" class="image" alt="Sunset." /></a>
-
-            <a href="photos/11.jpg" class="anchor"
-            data-caption=" I did a tour of a cave today and the view of the landscape below was breathtaking.">
-            <img src="photos/thumbnails/11.jpg" class="image" alt="Cave." /></a>
-
-            <a href="photos/12.jpg" class="anchor"
-            data-caption=" I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
-            <img src="photos/thumbnails/12.jpg" class="image" alt="Bluebells." /></a>
-
-        </div>
-    </div>
-
-
-    <!-- <script src="js/jquery-3.5.1.js"></script>  -->
-    <script src="js/searchFilter.js"></script>
-    <script src="js/baguetteBox.js"></script>
-    <script src="js/app.js"></script>
-
-</body>
+    </body>
 </html>
