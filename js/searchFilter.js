@@ -5,9 +5,9 @@ var mySearch, myGallery, a, dataCaption;
 mySearch = document.getElementById('search');
 myGallery = document.querySelectorAll('.gallery a');
 a = document.getElementsByTagName('a');
-  mySearch.value = mySearch.value.toUpperCase();
+  mySearch.value = mySearch.value.toLowerCase();
  for (i = 0; i < myGallery.length; i++) {
-  dataCaption = a[i].getAttribute('data-caption').toUpperCase();
+  dataCaption = a[i].getAttribute('data-caption').toLowerCase();
     if (dataCaption.includes(mySearch.value))  {
       a[i].style.display = "";
     } else {
