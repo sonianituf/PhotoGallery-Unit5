@@ -6,6 +6,18 @@
 body{
     background-color:rgb(235, 245, 240);
     margin: 10px 20px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+h1{
+  color: #003d66;
+  text-align: center;
+  text-shadow: 1.5px 1.5px #008ae6;
+  letter-spacing: normal;
+  transition:letter-spacing 2s;
+}
+h1:hover{
+  letter-spacing: .3em;
 }
 .searchBar {
     display: block;
@@ -45,4 +57,10 @@ body{
 }
 #baguetteBox-overlay .full-image figcaption {
   font-family: 'Sansita Swashed', cursive;
+}
+footer{
+  text-align: center;
+  margin-top: 10px;
+  color: #003d66;
+  font-weight: bold;
 }
